@@ -9,7 +9,7 @@ def resume_view(request):
         if form.is_valid():
             data = form.save(commit=False)
             data.save()
-            messages.success(request, f' {data.name}, Your response has been recorded')
+            messages.success(request, f' {data.name.title()}, Your response has been recorded')
             return redirect('resume')
     else:
         form = ContactForm()
