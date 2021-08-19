@@ -208,8 +208,9 @@ nav ul li a {
 }
 
 .logo img {
-  width: 100px;
+  width: 50px;
   height: 50px;
+
 }
 
 .responsive {
@@ -1295,3 +1296,5 @@ blockquote {
     margin-right: 0;
   }
 }
+
+
