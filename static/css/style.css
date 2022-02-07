@@ -178,7 +178,6 @@ nav {
   float: right;
   line-height: 32px;
   margin-bottom: 0;
-  padding-top: 16px;
 }
 
 nav ul li {
@@ -205,13 +204,14 @@ nav ul li a {
 
 .logo {
   float: left;
+  padding-bottom: 1%;
 }
 
-.logo img {
-  width: 50px;
+/* .logo img { */
+  /* width: 50px;
   height: 50px;
 
-}
+} */
 
 .responsive {
   display: none;
@@ -226,7 +226,7 @@ nav ul li a {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/home-bg4.jpg") repeat scroll center center/cover;
+  background: url("../img/WhatsApp Image 2022-02-07 at 12.57.23 PM.jpeg") repeat scroll center center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -394,10 +394,13 @@ nav ul li a {
   line-height: 22px;
 }
 
-.services-block i {
+.services-block i{
   font-size: 44px;
   color: #b8a07e;
   line-height: 44px;
+}
+.react-logo{
+  width: 44px;
 }
 
 .services-carousel .owl-stage-outer {
@@ -1298,3 +1301,14 @@ blockquote {
 }
 
 
+/* resume button*/
+.resume-button {
+  width: max-content;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.resume-button button {
+  background-color: #b8a07e;
+  font-size: 1rem;
+}
