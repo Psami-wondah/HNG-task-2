@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'resume',
     'widget_tweaks',
+    'background_task'
     ]
 
 MIDDLEWARE = [
@@ -135,6 +136,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp-relay.sendinblue.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'okechukwusamuel16@gmail.com'
+EMAIL_HOST_PASSWORD = os.getenv('PASS')
 
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-secondary',
